@@ -17,17 +17,16 @@ $("document").ready(function() {
     // Громкость 20%;
     audio.volume = 0.2;
     //$(audio).prop("volume", 0.2);
-    $(audio).prop('muted', true);
     $('.btn-info').hide();
     $(".muted").click(function(e) {
         event.preventDefault();
         $('#inv').slideToggle("fast");
-        if ($(audio).prop('muted')) {
-            $(audio).prop('muted', false);
+        if (audio.paused) {
+            audio.play;
             $(this).addClass('pause');
             $('.btn-info').fadeIn();
         } else {
-            $(audio).prop('muted', true);
+            audio.pause;
             $(this).removeClass('pause');
             $('.btn-info').fadeOut();
         }
