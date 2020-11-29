@@ -24,15 +24,15 @@ $("document").ready(function() {
         if (audio.paused) {
             audio.play();
             $(this).addClass('pause');
-            $('.btn-info').fadeIn();
+            $('.btn-info').stop(1, 1).fadeIn();
         } else {
             audio.pause();
             $(this).removeClass('pause');
-            $('.btn-info').fadeOut();
+            $('.btn-info').stop(1, 1).fadeOut();
         }
     });
     $('.btn-info').click(function(e) {
-        event.preventDefault();
+        e.preventDefault();
         $(this).toggleClass('opened').toggleClass('closed');
         $('#info').toggle();
         if ($(this).hasClass('opened')) {
@@ -52,11 +52,11 @@ $("document").ready(function() {
         }
     });
     $("#btn-plus").click(function(e) {
-        event.preventDefault();
+        e.preventDefault();
         $('#player')[0].volume += 0.1;
     });
     $("#btn-minus").click(function(e) {
-        event.preventDefault();
+        e.preventDefault();
         $('#player')[0].volume -= 0.1;
     });
 });
