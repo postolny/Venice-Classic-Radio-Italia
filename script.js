@@ -19,14 +19,14 @@ $("document").ready(function() {
     //$(audio).prop("volume", 0.2);
     $('.btn-info').hide();
     $(".muted").click(function(e) {
-        event.preventDefault();
+        e.preventDefault();
         $('#inv').slideToggle("fast");
         if (audio.paused) {
-            audio.play;
+            audio.play();
             $(this).addClass('pause');
             $('.btn-info').fadeIn();
         } else {
-            audio.pause;
+            audio.pause();
             $(this).removeClass('pause');
             $('.btn-info').fadeOut();
         }
