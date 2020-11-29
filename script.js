@@ -60,7 +60,4 @@ $("document").ready(function() {
         event.preventDefault();
         $('#player')[0].volume -= 0.1;
     });
-    $('#inverno').click(function() {
-        $(this).animate({ bottom: "-155px" }, 700);
-    });
 });
