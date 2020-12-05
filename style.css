@@ -95,3 +95,11 @@ legend {
 #inv {
   display: none
 }
+
+.btn-github {
+  background-image: url(./img/github-icon.png);
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 32px;
+  float: right;
+}
