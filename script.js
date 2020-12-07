@@ -1,4 +1,4 @@
-$("document").ready(function() {
+$(function() {
     // Записываем в переменную url адрес xml
     var url = "https://www.veniceclassicradio.eu/live1/nowplaying.xml";
     var auto_refresh = setInterval(function() {
@@ -16,11 +16,10 @@ $("document").ready(function() {
     var audio = $("#player")[0];
     // Громкость 20%;
     audio.volume = 0.2;
-    //$(audio).prop("volume", 0.2);
     $('.btn-info').hide();
-    $(".muted").click(function(e) {
+    $(".play").click(function(e) {
         e.preventDefault();
-        $('#inv').slideToggle("fast");
+        $('#pl').slideToggle("fast");
         if (audio.paused) {
             audio.play();
             $(this).addClass('pause');
@@ -58,5 +57,9 @@ $("document").ready(function() {
     $("#btn-minus").click(function(e) {
         e.preventDefault();
         $('#player')[0].volume -= 0.1;
+    });
+    $("#volumeSlider").change(function() {
+        let volume = $(this).val();
+        audio.volume = volume;
     });
 });
