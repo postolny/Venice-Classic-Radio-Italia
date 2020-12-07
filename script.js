@@ -1,7 +1,7 @@
 $(function() {
     // Записываем в переменную url адрес xml
-    var url = "https://www.veniceclassicradio.eu/live1/nowplaying.xml";
-    var auto_refresh = setInterval(function() {
+    let url = "https://www.veniceclassicradio.eu/live1/nowplaying.xml";
+    let auto_refresh = setInterval(function() {
         $('#art,#art1').load(url + ' ' + '#Current Artista');
         $('#tit,#tit1').load(url + ' ' + '#Current Titolo');
         $('#mov').load(url + ' ' + '#Current Movimenti');
@@ -13,9 +13,7 @@ $(function() {
         $('#int-next').load(url + ' ' + '#Next1 Interpreti');
         $('#dur-next').load(url + ' ' + '#Next1 Durata');
     }, 3000);
-    var audio = $("#player")[0];
-    // Громкость 20%;
-    audio.volume = 0.2;
+    let audio = $("#player")[0];
     $('.btn-info').hide();
     $(".play").click(function(e) {
         e.preventDefault();
@@ -49,14 +47,6 @@ $(function() {
         } else {
             $('.btn-info').removeClass('btn-info-close');
         }
-    });
-    $("#btn-plus").click(function(e) {
-        e.preventDefault();
-        $('#player')[0].volume += 0.1;
-    });
-    $("#btn-minus").click(function(e) {
-        e.preventDefault();
-        $('#player')[0].volume -= 0.1;
     });
     $("#volumeSlider").change(function() {
         let volume = $(this).val();
