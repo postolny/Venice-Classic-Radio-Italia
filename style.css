@@ -15,15 +15,15 @@ legend{padding:0 10px;}
 #pl{display:none;}
 #pl fieldset div{margin-top:5px;}
 #pl fieldset div:last-child{margin-bottom:5px;}
-#range{display:flex;align-items:center;width:100%;max-width:200px;}
-.controls input[type="range"]{-webkit-appearance:none;-webkit-tap-highlight-color:rgba(255,255,255,0);width:100%;max-width:200px;height:10px;margin:0;border:none;padding:1px 2px;border-radius:14px;background:#3a3a3a;box-shadow:inset 0 1px 0 0 #0d0e0f,inset 0 -1px 0 0 #3a3d42;-webkit-box-shadow:inset 0 1px 0 0 #0d0e0f,inset 0 -1px 0 0 #3a3d42;outline:none;}
+#range{display:flex;align-items:center;width:100%;max-width:100px;}
+.controls input[type="range"]{-webkit-appearance:none;-webkit-tap-highlight-color:rgba(255,255,255,0);width:100%;max-width:100px;height:10px;margin:0;border:none;padding:1px 2px;border-radius:14px;background:#3a3a3a;box-shadow:inset 0 1px 0 0 #0d0e0f,inset 0 -1px 0 0 #3a3d42;-webkit-box-shadow:inset 0 1px 0 0 #0d0e0f,inset 0 -1px 0 0 #3a3d42;outline:none;}
 .controls input[type="range"]::-moz-range-track{border:inherit;background:transparent;}
 .controls input[type="range"]::-ms-track{border:inherit;color:transparent;background:transparent;}
 .controls input[type="range"]::-ms-fill-lower,
 .controls input[type="range"]::-ms-fill-upper{background:transparent;}
 .controls input[type="range"]::-ms-tooltip{display:none;}
-.controls input[type="range"]::-webkit-slider-thumb{-webkit-appearance:none;width:40px;height:8px;border:none;border-radius:12px;background:#1f4037;background:-webkit-linear-gradient(to bottom,#99f2c8,#1f4037);background:linear-gradient(to bottom,#99f2c8,#1f4037);}
-.controls input[type="range"]::-moz-range-thumb{width:40px;height:8px;border:none;border-radius:12px;background:#1f4037;background:linear-gradient(to bottom,#99f2c8,#1f4037);}
-.controls input[type="range"]::-ms-thumb{width:40px;height:8px;border-radius:12px;border:0;background:#1f4037;background:linear-gradient(to bottom,#99f2c8,#1f4037);}
+.controls input[type="range"]::-webkit-slider-thumb{-webkit-appearance:none;width:30px;height:8px;border:none;border-radius:12px;background:#1f4037;background:-webkit-linear-gradient(to bottom,#99f2c8,#1f4037);background:linear-gradient(to bottom,#99f2c8,#1f4037);}
+.controls input[type="range"]::-moz-range-thumb{width:30px;height:8px;border:none;border-radius:12px;background:#1f4037;background:linear-gradient(to bottom,#99f2c8,#1f4037);}
+.controls input[type="range"]::-ms-thumb{width:30px;height:8px;border-radius:12px;border:0;background:#1f4037;background:linear-gradient(to bottom,#99f2c8,#1f4037);}
 #btns-left{width:100%;display:flex;justify-content:flex-end;}
 .btn-github{background-image:url(./img/github-icon.png);background-repeat:no-repeat;width:32px;height:32px;}
