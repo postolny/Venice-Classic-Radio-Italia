@@ -18,13 +18,17 @@
     <main>
         <fieldset>
             <legend>Радиостанция Venice Classic Radio Italia</legend>
-            <audio preload="metadata" id="player" src="https://uk2.streamingpulse.com/ssl/vcr1"
-                type="audio/mpeg"></audio>
+            <audio preload="none" id="player" src="https://uk2.streamingpulse.com/ssl/vcr1" type="audio/mpeg"></audio>
             <div class="controls">
-                <div><a href="#" class="play"></a></div>
-                <div id="range"><input id="volumeSlider" type="range" min="0" max="1" step="0.1" value="0.3" /></div>
-                <div id="btns-left"><a href="#" class="btn-info"></a><a
-                        href="https://github.com/postolny/venice-classic-radio" class="btn-github" target="_blank"></a>
+                <div>
+                    <a href="#" class="play"></a>
+                </div>
+                <div id="range">
+                    <input id="volumeSlider" type="range" min="0" max="1" step="0.1" value="0.3" />
+                </div>
+                <div id="btns-left">
+                    <a href="#" class="btn-info"></a>
+                    <a href="https://github.com/postolny/venice-classic-radio" class="btn-github" target="_blank"></a>
                 </div>
             </div>
         </fieldset>
@@ -32,37 +36,47 @@
             <fieldset>
                 <legend>Текущий трек</legend>
                 <div>
-                    <label>Композитор:</label> <span id="art">Загрузка...</span>
+                    <label>Композитор:</label>
+                    <span id="art">Загрузка...</span>
                 </div>
                 <div>
-                    <label>Сочинение:</label> <span id="tit">Загрузка...</span>
+                    <label>Сочинение:</label>
+                    <span id="tit">Загрузка...</span>
                 </div>
                 <div>
-                    <label>Части:</label> <span id="mov">Загрузка...</span>
+                    <label>Части:</label>
+                    <span id="mov">Загрузка...</span>
                 </div>
                 <div>
-                    <label>Исполнители:</label> <span id="int">Загрузка...</span>
+                    <label>Исполнители:</label>
+                    <span id="int">Загрузка...</span>
                 </div>
                 <div>
-                    <label>Продолжительность:</label> <span id="dur">Загрузка...</span>
+                    <label>Продолжительность:</label>
+                    <span id="dur">Загрузка...</span>
                 </div>
             </fieldset>
             <fieldset>
                 <legend>Следующий трек</legend>
                 <div>
-                    <label>Композитор:</label> <span id="art-next">Загрузка...</span>
+                    <label>Композитор:</label>
+                    <span id="art-next">Загрузка...</span>
                 </div>
                 <div>
-                    <label>Сочинение:</label> <span id="tit-next">Загрузка...</span>
+                    <label>Сочинение:</label>
+                    <span id="tit-next">Загрузка...</span>
                 </div>
                 <div>
-                    <label>Части:</label> <span id="mov-next">Загрузка...</span>
+                    <label>Части:</label>
+                    <span id="mov-next">Загрузка...</span>
                 </div>
                 <div>
-                    <label>Исполнители:</label> <span id="int-next">Загрузка...</span>
+                    <label>Исполнители:</label>
+                    <span id="int-next">Загрузка...</span>
                 </div>
                 <div>
-                    <label>Продолжительность:</label> <span id="dur-next">Загрузка...</span>
+                    <label>Продолжительность:</label>
+                    <span id="dur-next">Загрузка...</span>
                 </div>
             </fieldset>
             <div id="info">
